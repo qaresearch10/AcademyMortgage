@@ -1,0 +1,11 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/slnx.sqlite
+/.vs/AcademyMortgage/v16/TestStore/0/testlog.manifest
+/.vs/AcademyMortgage/v16/TestStore/0/000.testlog
+/.vs
+/Automation/.vs
+/Automation/WebAutomation/bin
+/Automation/WebAutomation/obj
