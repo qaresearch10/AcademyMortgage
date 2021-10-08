@@ -15,16 +15,14 @@ namespace WebAutomation
             #region Arrange
             //Navigate to the home page
             SeleniumUtils.GoToURL("https://academymortgage.com/");
-            SeleniumUtils.Wait.UntilElementVisible(Menu.Elements.AboutUsLink);
             #endregion
 
             #region Act
             //Navigate to the WhoWeAre page
-            SeleniumUtils.Action.Click(Menu.Elements.AboutUsLink);
+            Menu.ClickAboutUs();
             SeleniumUtils.Action.Click(Menu.Elements.WhoWeAreLink);
             bool isImageVisible = SeleniumUtils.Wait.UntilElementVisible(WhoWeArePage.Elements.MainImage);
             string actualURL = SeleniumUtils.driver.Url;
-
             #endregion
 
             #region Assert
@@ -43,12 +41,11 @@ namespace WebAutomation
             #region Arrange
             //Navigate to the home page
             SeleniumUtils.GoToURL("https://academymortgage.com/");
-            SeleniumUtils.Wait.UntilElementVisible(Menu.Elements.AboutUsLink);
             #endregion
 
             #region Act
             //Navigate to the WhatSetsUsApartPage page
-            SeleniumUtils.Action.Click(Menu.Elements.AboutUsLink);
+            Menu.ClickAboutUs();
             SeleniumUtils.Action.Click(Menu.Elements.WhatSetsUsApartLink);
             bool isBannerTitleVisible = SeleniumUtils.Wait.UntilElementVisible(WhatSetsUsApartPage.Elements.PageBannerTitle);
             IWebElement element = SeleniumUtils.driver.FindElement(WhatSetsUsApartPage.Elements.PageBannerTitle);
@@ -71,12 +68,11 @@ namespace WebAutomation
             #region Arrange
             //Navigate to the home page
             SeleniumUtils.GoToURL("https://academymortgage.com/");
-            SeleniumUtils.Wait.UntilElementVisible(Menu.Elements.AboutUsLink);
             #endregion
 
             #region Act
             //Navigate to the HowWeMeasureOurSuccess page
-            SeleniumUtils.Action.Click(Menu.Elements.AboutUsLink);
+            Menu.ClickAboutUs();
             SeleniumUtils.Action.Click(Menu.Elements.HowWeMeasureSuccessLink);
             bool isBannerTitleVisible = SeleniumUtils.Wait.UntilElementVisible(HowWeMeasureOurSuccessPage.Elements.PageBannerTitle);
             IWebElement element = SeleniumUtils.driver.FindElement(HowWeMeasureOurSuccessPage.Elements.PageBannerTitle);

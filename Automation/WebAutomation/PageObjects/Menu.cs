@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using OpenQA.Selenium;
+using WebAutomation.Utilities;
 
 namespace WebAutomation.PageObjects
 {
@@ -20,5 +21,13 @@ namespace WebAutomation.PageObjects
                 ContactUsLink = By.LinkText("Contact Us")
             ;
         }
+
+        #region Methods
+        public static void ClickAboutUs()
+        {
+            SeleniumUtils.Wait.UntilElementVisible(Elements.AboutUsLink);
+            SeleniumUtils.Action.Click(Elements.AboutUsLink);
+        }
+        #endregion
     }
 }
