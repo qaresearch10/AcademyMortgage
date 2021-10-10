@@ -99,8 +99,7 @@ namespace WebAutomation.Utilities
                 catch(Exception e)
                 {
                     //todo
-                }
-                                  
+                }                                  
             }
 
             /// <summary>
@@ -123,7 +122,6 @@ namespace WebAutomation.Utilities
                 {
                     //todo
                 }
-
             }
         }
     }

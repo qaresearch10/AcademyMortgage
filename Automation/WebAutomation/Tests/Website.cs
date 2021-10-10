@@ -14,7 +14,7 @@ namespace WebAutomation
         {
             #region Arrange
             //Navigate to the home page
-            SeleniumUtils.GoToURL("https://academymortgage.com/");
+            SeleniumUtils.GoToURL(SiteUrl);
             #endregion
 
             #region Act
@@ -31,8 +31,7 @@ namespace WebAutomation
                 Assert.True(isImageVisible);
                 Assert.AreEqual("https://academymortgage.com/about-us/who-we-are", actualURL, "URL address is not correct");
             });
-            #endregion
-            
+            #endregion            
         }
 
         [Test]
@@ -40,7 +39,7 @@ namespace WebAutomation
         {
             #region Arrange
             //Navigate to the home page
-            SeleniumUtils.GoToURL("https://academymortgage.com/");
+            SeleniumUtils.GoToURL(SiteUrl);
             #endregion
 
             #region Act
@@ -67,7 +66,7 @@ namespace WebAutomation
         {
             #region Arrange
             //Navigate to the home page
-            SeleniumUtils.GoToURL("https://academymortgage.com/");
+            SeleniumUtils.GoToURL(SiteUrl);
             #endregion
 
             #region Act

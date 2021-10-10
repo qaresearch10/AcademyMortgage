@@ -12,7 +12,7 @@ namespace WebAutomation.TestManagement
     public class TestBaseClass
     {
         #region Fields
-        public static readonly string ClientUrl = "";
+        public static readonly string SiteUrl = "https://academymortgage.com";
         #endregion    
 
 		[SetUp]
